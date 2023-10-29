@@ -429,8 +429,12 @@
 }
 
 
+/* Mostrar menú de hamburguesa en pantallas más pequeñas */
 @media only screen and (max-width: 940px){
     .menu-container{
         display: none;
+    }
+    .mobile-menu{
+        display: block; /* Muestra un menú de hamburguesa o similar */
     }
 }
