@@ -1,0 +1,436 @@
+
+* {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+
+/*Barra de navegación*/
+.navbar {
+    width: 100%;
+    height: 65px;
+    background-color: black;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    height: 100%;
+    color: white;
+}
+
+
+#scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  #scroll-button:hover {
+    background-color: #ce0000;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  .dark-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dark-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dark-overlay::before {
+    content: "";
+    position: absolute;
+    top: 5%; /* Ajusta según tus necesidades */
+    right: 5%; /* Ajusta según tus necesidades */
+    bottom: 5%; /* Ajusta según tus necesidades */
+    left: 5%; /* Ajusta según tus necesidades */
+    background-color: rgba(0, 0, 0, 1); /* Color de superposición (negro con 100% de opacidad) */
+  }
+  
+  .featured-title {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+  }
+  
+  
+
+  /* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0000; /* Color del "pulgar" de la barra */
+    border-radius: 5px; /* Borde redondeado del pulgar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+}
+
+/* Estilos para la flecha de desplazamiento hacia arriba (botón) */
+#scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#scroll-button:hover {
+    background-color: #ff0000;
+}
+
+
+
+.menu-container {
+    flex: 6;
+}
+.profile-container {
+    flex: 2;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item {
+    margin-right: 80px;
+    transition: 0.7s;
+}
+
+.menu-list-item:hover {
+    color:#fc1d00f5;
+}
+
+
+.movie-list-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-list {
+    display: flex;
+    transition: transform 0.5s;
+    user-select: none; /* Evitar la selección de texto */
+}
+
+.movie-list-container {
+    max-height: 100vh; /* Limita la altura de la sección para evitar el desplazamiento vertical */
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+}
+
+
+/*Logo*/
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 30px;
+    color: #fc1d00f5;
+}
+
+/* Darkmode */
+
+.dark-mode-container {
+    flex: 2;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end;
+}
+
+.toggle {
+    width: 70px;
+    height: 35px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon {
+    color: #fc1d00f5;
+}
+
+.toggle-ball {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    right: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    transition: .5s ease all;
+}
+
+
+/* Search bar */
+
+.search-bar {
+    width: 500px;
+    margin-left: 200px;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 15px;
+}
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    color: #bdbdbd;
+}
+::placeholder {
+    color: #bdbdbd;
+}
+.search-bar button {
+    border: 0px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fc1d00f5;
+    cursor: pointer;
+}
+
+/* peliculas */
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+/*
+.content-container {
+    
+}
+*/
+
+.featured-content {
+    height: 40vh;
+    padding: 30px;
+}
+
+.featured-title {
+    width: 800px;
+    margin-top: -35px;
+    position: absolute;
+    margin-right: 80px;
+}
+
+.featured-desc {
+    width: 850px;
+    color: #ffffff;
+    margin: 30px 0;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 150px;
+}
+
+.featured-button{
+    background-color:#fc1d00f5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold; 
+    margin-top: 50px; 
+}
+
+/*peliculas*/
+
+.movie-list-title {
+    padding: 20px;
+}
+
+.movie-list-container {
+    padding: 20px;
+    
+}
+
+.movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list {
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.1);
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+}
+
+.movie-list-item-img {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    border-radius: 20px;
+}
+
+.movie-list-item-title {
+    background-color: #151515d7;
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 2px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.movie-list-item-desc {
+    background-color: #151515d7;
+    font-size: 14px;
+    position: absolute;
+    padding: 10px;
+    top: 27%;
+    left: 2px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.movie-list-item-button {
+    padding: 10px 20px;
+    background-color:#fc1d00f5;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold; 
+    margin-top: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 2px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    color: #ffffff;
+    opacity: .5;
+    cursor: pointer;
+}
+
+/*para togglear el dark mode*/
+.container.active {
+    background-color: white;
+}
+
+.movie-list-title.active {
+    color: black;
+}
+
+.navbar.active {
+    background-color: white;
+}
+
+.navbar-container.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: rgb(187, 187, 187);
+}
+
+.toggle-icon.active {
+    color: #505050;
+}
+
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-32px);    
+}
+
+.search-bar.active {
+    background-color: rgb(224, 224, 224);
+}
+
+.search-bar button.active {
+    background-color: white;
+}
+
+.featured-desc.active{
+    color: black;
+}
+
+.arrow.active {
+    color: black;
+}
+
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
